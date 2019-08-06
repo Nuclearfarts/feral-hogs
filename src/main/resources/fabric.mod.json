@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "feralhogs",
+  "version": "1.0.0",
+
+  "name": "Feral Hogs",
+  "description": "Spawns 30-50 feral hogs every 3-5 minutes",
+  "authors": [
+    "NuclearFarts"
+  ],
+  "contact": {
+    "sources": "https://github.com/nuclearfarts/feral-hogs"
+  },
+
+  "license": "LGPL v3",
+  
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nuclearfarts.feralhogs.FeralHogs"
+    ]
+  },
+  "mixins": [
+    "feralhogs.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric-events-lifecycle-v0": "*"
+  }
+}
